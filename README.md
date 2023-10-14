@@ -1,3 +1,8 @@
+# settings
+
+Mes paramètres Visual Studio Code 💻
+
+```json
 {
   "editor.suggestSelection": "first",
   "diffEditor.ignoreTrimWhitespace": false,
@@ -27,8 +32,7 @@
   "git.enableSmartCommit": true,
 
   // Style Parameters
-  // "workbench.colorTheme": "Tokyo Night",
-  // "editor.fontLigatures": "'calt', 'ss01'",
+
   "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'zero', 'onum'",
   "editor.fontFamily": "'Cascadia Code', Consolas, 'Courier New', monospace",
   "editor.lineHeight": 24,
@@ -41,21 +45,15 @@
         "scope": [
           "comment",
           "keyword",
-          // "entity.name.function.ts",
           "meta.function-call.ts",
-          // "source.ts",
-          // "source.vue",
-          // "string.quoted.double.html",
-          // "meta.tag.block.any.html",
           "entity.other.attribute-name.html",
-          // "text.html.vue-html",
           "storage.modifier",
           "storage.type.class.js",
           "storage.type.js"
         ],
+
         "settings": {
           "fontStyle": "italic bold",
-          // "fontFamily": "Futura"
         }
       },
       {
@@ -85,13 +83,10 @@
   "vetur.validation.style": false,
 
   // Eslint Configuration
-  // "prettier.enable": true,
-  // Enable the flat config support
 
   "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "eslint.experimental.useFlatConfig": true,
 
-  // Disable the default formatter
   "prettier.enable": false,
 
   // Auto fix
@@ -101,7 +96,8 @@
     "source.fixAll.stylelint": true,
     "source.organizeImports": false
   },
-  // Silent the stylistic rules in you IDE, but still auto fix them
+
+  // Silent the stylistic rules in IDE
   "eslint.rules.customizations": [
     { "rule": "@stylistic/*", "severity": "off" },
     { "rule": "style*", "severity": "off" },
@@ -114,11 +110,6 @@
     { "rule": "*quotes", "severity": "off" },
     { "rule": "*semi", "severity": "off" }
   ],
-
-  // The following is optional.
-  // It's better to put under project setting `.vscode/settings.json`
-  // to avoid conflicts with working with different eslint configs
-  // that does not support all formats.
 
   "eslint.validate": [
     "javascript",
@@ -133,6 +124,7 @@
     "jsonc",
     "yaml"
   ],
+
   "[vue]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
@@ -151,6 +143,7 @@
   "stylelint.validate": [
     "css",
     "scss",
-    "vue" // Add any other file extensions you want to lint
+    "vue"
   ]
 }
+```
