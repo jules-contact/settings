@@ -1,0 +1,2 @@
+# settings
+My VSC settings
